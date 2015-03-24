@@ -1,2 +1,2 @@
 # MyFirst
-This is ADBMS project
+This is test github project

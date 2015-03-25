@@ -52,7 +52,7 @@ if(isset($_POST["lsb"]))
 
 	//$sql="SELECT id,pass FROM user ";
 
-	$rs = mysql_query("SELECT id,pass FROM user");
+	$rs = mysql_query("SELECT id,pass FROM user where id=$sid");
 
 	//$row=0; // ???
 	//$numrows=mysql_num_rows($result);
@@ -66,6 +66,7 @@ if(isset($_POST["lsb"]))
 	//echo $id ."&nbsp&nbsp".  $pass;
 	$nor = mysql_num_rows($rs); 
 	echo $numFields."<br>";
+	//statement
 
 	$row = mysql_fetch_array($rs);
 	echo $row["id"];
